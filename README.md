@@ -100,16 +100,6 @@ Each run returns a structured trace, not a stream of hidden model reasoning: goa
 - **Human authority is explicit.** The policy threshold blocks the write and exposes an approval action; the original task does not silently override policy.
 - **Narrative task input, deterministic safety boundary.** The lightweight intent recognizer is deliberately transparent for the demo. In production it would be replaced by an LLM planner that emits a validated structured plan, while tool schemas, policy evaluation, idempotency, and verification remain deterministic.
 
-## Demo walkthrough (about 90 seconds)
-
-1. Start the server and show the approved workspace's file count and zero ledger entries.
-2. Ask the handbook question and point out the file excerpt returned as evidence.
-3. Run the default task. Point out the generated plan, workspace search, extraction, remembered invoice, timeout, safe retry, receipt, and verification event.
-4. Show that the ledger now has one entry and that the evidence receipt matches the source file.
-5. Run the **Browser task** example; its trace shows browser search, opening the portal record, form submission, and verification.
-6. Reset, run the CloudFleet example, and show it halts for approval before changing the ledger.
-7. Use the **Approve & continue** button to complete the write and verify it.
-8. Click **Evaluate suite** to show five repeatable acceptance scenarios passing, then **Run history** to show persisted audit records.
 
 ## Assumptions and limitations
 
