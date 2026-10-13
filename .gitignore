@@ -1,0 +1,12 @@
+# Local configuration and operating-system files
+.env
+.env.*
+.DS_Store
+
+# Local run logs and checkpoints
+data/runs.json
+data/checkpoints/
+
+# Dependencies and debug logs
+node_modules/
+npm-debug.log*

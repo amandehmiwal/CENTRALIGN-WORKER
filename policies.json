@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": {
+    "workspaceAccess": "read_only",
+    "ledgerWriteRequiresApprovalAbove": 100000,
+    "maxTransientRetries": 1,
+    "externalActionsAllowed": false
+  }
+}

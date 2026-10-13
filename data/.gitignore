@@ -1,0 +1,3 @@
+# Runtime audit logs and checkpoints are created locally when the worker runs.
+*
+!.gitignore
